@@ -24,6 +24,31 @@ print(mensaje2, "\n")
 print("=== MENSAJE CONCATENADO 3 ===")
 print(mensaje3, "\n")
 
+# Mensajes adicionales combinando diferentes estilos
+mensaje4 = f"¿Sabías que {nombre} siempre encuentra tiempo para {hobby} en {ciudad}?"
+mensaje5 = f"Si visitas {ciudad}, seguramente te encontrarás con {nombre} disfrutando de {hobby}."
+mensaje6 = "Recordatorio: " + nombre + " no olvida nunca disfrutar de " + hobby + " sin importar la ciudad."
+
+print("=== MENSAJE CONCATENADO 4 ===")
+print(mensaje4, "\n")
+
+print("=== MENSAJE CONCATENADO 5 ===")
+print(mensaje5, "\n")
+
+print("=== MENSAJE CONCATENADO 6 ===")
+print(mensaje6, "\n")
+
+# Mensaje aleatorio usando f-string y concatenación
+import random
+plantillas = [
+    f"{nombre} vive aventuras en {ciudad} mientras disfruta de {hobby}.",
+    f"En {ciudad}, {nombre} se dedica a {hobby} con pasión.",
+    f"{nombre} aprovecha cada momento libre en {ciudad} para {hobby}."
+]
+mensaje_aleatorio = random.choice(plantillas)
+print("=== MENSAJE ALEATORIO ===")
+print(mensaje_aleatorio, "\n")
+
 #------------------------------------
 #-------LO QUE LE TOCA A ANI---------
 #------------------------------------
