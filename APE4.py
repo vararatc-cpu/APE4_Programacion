@@ -69,8 +69,16 @@ print(mensaje3.lower(), "\n")
 #------------------------------------------
 print("=== CONTEO Y REEMPLAZO ===")
 # Contar y reemplazar
-veces = mensaje3.count("y")
-print(f"La palabra 'y' aparece {veces} veces.\n")
+def contar_caracteres(mensaje3):
+    """Cuenta el número total de caracteres en un texto (incluyendo espacios)."""
+    return len(mensaje3)
+
+def contar_palabras(mensaje3):
+    """Cuenta el número de palabras en un texto, dividiendo por espacios."""
+    return len(mensaje3.split())
+
+print(f" El mensaje 3 contiene {contar_caracteres(mensaje3)} caracteres")
+print(f" El mensaje 3 contiene {contar_palabras(mensaje3)} palabras")
 
 mensaje_final = mensaje3.replace(hobby, "programar")  # reemplaza hobby por otra cosa
 print("Mensaje final con reemplazo:")
