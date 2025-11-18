@@ -1,5 +1,5 @@
 #------------------------------------
-#-------LO QUE LE TOCA A SAM---------
+#-------------CONCATENACION---------
 #------------------------------------
 
 # Entrada de datos básicos
@@ -12,9 +12,7 @@ mensaje1 = "Hola " + nombre + ", espero que disfrutes tu día en " + ciudad + "!
 mensaje2 = nombre + " disfruta mucho " + hobby + " cuando tiene tiempo libre."
 mensaje3 = f"{nombre} vive en {ciudad} y le encanta {hobby}."
 
-#------------------------------------
 #-------MENSAJES CONCATENADOS--------
-#------------------------------------
 print("\n=== MENSAJE CONCATENADO 1 ===")
 print(mensaje1, "\n")
 
@@ -49,9 +47,10 @@ mensaje_aleatorio = random.choice(plantillas)
 print("=== MENSAJE ALEATORIO ===")
 print(mensaje_aleatorio, "\n")
 
-#------------------------------------
-#-------LO QUE LE TOCA A ANI---------
-#------------------------------------
+
+#------------------------------------------------
+#-------Subcadenas, mayúsculas/minúsculas---------
+#------------------------------------------------
 
 print("=== EXTRACCIÓN Y FORMATO ===")
 # Tomando subcadenas
@@ -65,9 +64,9 @@ print(mensaje3.upper(), "\n")
 print("Mensaje en minúsculas:")
 print(mensaje3.lower(), "\n")
 
-#------------------------------------
-#-------LO QUE LE TOCA A JENI--------
-#------------------------------------
+#------------------------------------------
+#-------Conteo y reemplazo de texto--------
+#------------------------------------------
 print("=== CONTEO Y REEMPLAZO ===")
 # Contar y reemplazar
 veces = mensaje3.count("y")
