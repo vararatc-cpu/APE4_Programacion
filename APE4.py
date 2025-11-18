@@ -48,21 +48,43 @@ print("=== MENSAJE ALEATORIO ===")
 print(mensaje_aleatorio, "\n")
 
 
-#------------------------------------------------
-#-------Subcadenas, mayúsculas/minúsculas---------
-#------------------------------------------------
+#------------------------------------
+#-------                    ---------
+#------------------------------------
 
 print("=== EXTRACCIÓN Y FORMATO ===")
-# Tomando subcadenas
-nombre_extraido = mensaje3[0:len(nombre)]  # corta solo el nombre
-print("Nombre extraído:", nombre_extraido, "\n")
 
-# Mayúsculas y minúsculas
-print("Mensaje en mayúsculas:")
+# Subcadenas basadas en datos reales del usuario
+# Extraer solamente el nombre desde mensaje3
+subcadena_nombre = mensaje3[0:len(nombre)]
+print("Subcadena (solo el nombre extraído):", subcadena_nombre, "\n")
+
+# Extraer la ciudad desde el mensaje
+# Buscar dinámicamente para no usar posiciones fijas
+inicio_ciudad = mensaje3.find(ciudad)
+fin_ciudad = inicio_ciudad + len(ciudad)
+subcadena_ciudad = mensaje3[inicio_ciudad:fin_ciudad]
+print("Subcadena (ciudad extraída):", subcadena_ciudad, "\n")
+
+# Extraer el hobby desde el mensaje
+inicio_hobby = mensaje3.find(hobby)
+fin_hobby = inicio_hobby + len(hobby)
+subcadena_hobby = mensaje3[inicio_hobby:fin_hobby]
+print("Subcadena (hobby extraído):", subcadena_hobby, "\n")
+
+# Mayúsculas y minúsculas del mensaje principal
+print("Mensaje completo en MAYÚSCULAS:")
 print(mensaje3.upper(), "\n")
 
-print("Mensaje en minúsculas:")
+print("Mensaje completo en minúsculas:")
 print(mensaje3.lower(), "\n")
+
+# Variación adicional: convertir solo el nombre a mayúsculas
+print("Nombre en mayúsculas:", nombre.upper(), "\n")
+
+# Variación adicional: convertir solo la ciudad a minúsculas
+print("Ciudad en minúsculas:", ciudad.lower(), "\n")
+
 
 #------------------------------------------
 #-------Conteo y reemplazo de texto--------
